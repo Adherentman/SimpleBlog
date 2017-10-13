@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { Url } from '../env';
 import { Drawer, Subheader, FontIcon, List, ListItem, makeSelectable, Divider } from 'material-ui';
-import ActionLabel from 'material-ui/svg-icons/action/label';
+import ActionLabel from 'material-ui/svg-icons/maps/directions-run';
 
 const SelectableList = makeSelectable(List);
 
@@ -40,8 +40,8 @@ class AppDrawer extends React.Component{
                         value={it.key}
                         primaryText={it.label}
                         leftIcon={
-                        <FontIcon className="material-icons"
-                        style={iconStyle} md-36>{it.icon}</FontIcon>}
+                        <FontIcon className="material-icons md-48"
+                        style={iconStyle}>{it.icon}</FontIcon>}
                         /> );    
                     })
                 }
@@ -52,7 +52,7 @@ class AppDrawer extends React.Component{
                         window.open(value);
                     }}>
                         <Subheader>Links</Subheader>
-                        <ListItem primaryText="GitHub" value="https://github.com/Adherentman" leftIcon={<ActionLabel/>} />
+                        <ListItem primaryText="My GitHub" value="https://github.com/Adherentman" leftIcon={<ActionLabel/>} />
                     </SelectableList>
                 </SelectableList>
             </Drawer>
