@@ -1,4 +1,4 @@
-#基于React技术栈和Material UI写得一个Blog
+# 基于React技术栈和Material UI的一个Blog
 
 - git clone
 - yarn
