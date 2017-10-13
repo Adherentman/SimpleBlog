@@ -1,9 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { Url } from '../env';
-import Drawer from 'material-ui/Drawer';
-import Subheader from 'material-ui/Subheader';
-import {List, ListItem, makeSelectable} from 'material-ui/List';
+import { Drawer, Subheader, FontIcon, List, ListItem, makeSelectable, Divider } from 'material-ui';
+import ActionLabel from 'material-ui/svg-icons/action/label';
 
 const SelectableList = makeSelectable(List);
 
@@ -12,9 +11,17 @@ class AppDrawer extends React.Component{
 
         const { value, history } = this.props;
 
+        const iconStyle = {
+            marginRight: "24"
+        };
+
         const allListItem = [
-            { key: "hhh", label: "所有的文章" },
-            { key: "xixi", label: "你好" }
+            { key: "dashboard", label: "DashBoard", icon: "dashboard" },
+            { key: "posts", label: "All Posts", icon: "chrome_reader_mode" },
+            { key: "fe", label: "Font-end Dev", icon: "keyboard" },
+            { key: "os", label: "Operating System", icon: "important_devices" },
+            { key: "flight", label: "Life trip", icon: "flight_takeoff" },
+            { key: "me", label: "About Me", icon: "face"},
         ];
 
         let Item = allListItem;
@@ -32,11 +39,21 @@ class AppDrawer extends React.Component{
                         key={it.key}
                         value={it.key}
                         primaryText={it.label}
-                        /> );
-                    
-                    }
-                )
+                        leftIcon={
+                        <FontIcon className="material-icons"
+                        style={iconStyle} md-36>{it.icon}</FontIcon>}
+                        /> );    
+                    })
                 }
+
+                <Divider /> <br />
+
+                    <SelectableList onChange={(evt, value) => {
+                        window.open(value);
+                    }}>
+                        <Subheader>Links</Subheader>
+                        <ListItem primaryText="GitHub" value="https://github.com/Adherentman" leftIcon={<ActionLabel/>} />
+                    </SelectableList>
                 </SelectableList>
             </Drawer>
         );

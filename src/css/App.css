@@ -1,0 +1,12 @@
+@import "font-icons/style.css";
+
+body{
+  background-color: #444444;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-paper {
+  padding: 0px 30px;
+}

@@ -8,8 +8,8 @@ class Main extends React.Component{
 	render(){
 
 		const container ={
-			marginTop: "7%", 
-			marginLeft: "22%",
+			marginTop: "6%", 
+			marginLeft: "20%",
 			marginRight: "2%", 
 			marginBottom: "3%",
 		};
