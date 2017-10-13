@@ -15,7 +15,7 @@ class Lin extends Component{
       ];
 
         return(
-        <LineChart width={400} height={400} data={data}>
+        <LineChart width={200} height={200} data={data}>
             <Line type="monotone" dataKey="uv" stroke="#8884d8" />
         </LineChart>
         );

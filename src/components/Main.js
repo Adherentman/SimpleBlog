@@ -16,7 +16,7 @@ class Main extends React.Component{
 
 		const { children, selectedDrawer } = this.props;
 		return(
-			<div className="container-fluid">
+			<div>
 				<AppHeader />
 				{selectedDrawer &&<AppDrawer value={selectedDrawer}/>}
 				<div style={container}>
