@@ -34,7 +34,7 @@ class NumberCard extends Component{
 
         return(
             <Card style={numbercard}>
-                <FontIcon className="material-icons" style={fontIcon}>home</FontIcon>
+                <FontIcon className="material-icons" style={fontIcon}>group</FontIcon>
                 <div style={content}>
                     <p style={title}>Online Review</p>
                     <p style={number}> 
@@ -53,4 +53,7 @@ class NumberCard extends Component{
     }
 }
 
+Number.propTypes = {
+    number: PropTypes.string,
+  }
 export default NumberCard;

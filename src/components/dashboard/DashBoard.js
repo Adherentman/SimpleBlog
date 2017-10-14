@@ -1,30 +1,37 @@
 import React from 'react';
 import Main from '../Main';
 import { withRouter } from 'react-router';
-import { Paper, Card } from 'material-ui';
+import { Paper } from 'material-ui';
 import { Row, Col } from 'react-bootstrap';
 import NumberCard from './component/NumberCard';
+import AreaCharts from "./component/AreaCharts";
 
 class DashBoard extends React.Component{
     render(){
-
-        const cardstyle = {
-            width:200,
-        };
-
         return(
             <Main selectedDrawer="dashboard">
                 <Paper className="admin-paper" zDepth={3}>
                     <Row className="show-grid">
-                        <Col md={4}>
+                        <Col xs={6} md={4}>
                             <NumberCard />
                         </Col>
-                        <Col md={4}>
+                        <Col xs={6} md={4}>
                             <NumberCard />
                         </Col>
-                        <Col md={4}>
+                        <Col xs={6} md={4}>
                             <NumberCard />
                         </Col>
+                        <Col xs={12} md={8}>
+                        <AreaCharts />
+                    </Col>
+                    <Col xs={6} md={4}>
+                        <Row className="show-grid">
+                            <Col xs={18} md={12}>
+                            </Col>
+                            <Col xs={18} md={12}>
+                            </Col>
+                        </Row>
+                    </Col>
                     </Row>
                 </Paper>
             </Main>
