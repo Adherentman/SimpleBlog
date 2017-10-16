@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
     "material-ui": "^0.19.4",
+    "nodemon": "^1.12.1",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.3",
     "react-countup": "^2.3.0",
@@ -24,5 +29,9 @@
   "devDependencies": {
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Adherentman/projectblog.git",
+  "author": "macxu <adherentxu@gmail.com>",
+  "license": "MIT"
 }
