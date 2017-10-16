@@ -1,6 +1,6 @@
 @import "font-icons/style.css";
 
-body{
+body {
   background-color: #444444;
   height: 100%;
   padding: 0;
@@ -10,4 +10,9 @@ body{
 .admin-paper {
   padding: 0px 30px;
   height: 100%;
+}
+
+.footer {
+  width: 100%;
+  padding-top: 8px;
 }
