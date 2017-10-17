@@ -7,7 +7,7 @@ import './css/App.css';
 import { Url } from "./env";
 import hi from "./components/posts/hi";
 import DashBoard from "./components/dashboard/DashBoard";
-
+import Lin from './components/dashboard/Line';
 
 class App extends Component {
 	render() {

@@ -1,2 +1,2 @@
 
-export const Url = (url) => '/src/' + url;
+export const Url = (url) => '/build/' + url;
