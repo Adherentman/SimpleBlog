@@ -12,26 +12,10 @@ class DashBoard extends React.Component{
             <Main selectedDrawer="dashboard">
                 <Paper className="admin-paper" zDepth={3}>
                     <Row className="show-grid">
-                        <Col xs={6} md={4}>
                             <NumberCard />
-                        </Col>
-                        <Col xs={6} md={4}>
-                            <NumberCard />
-                        </Col>
-                        <Col xs={6} md={4}>
-                            <NumberCard />
-                        </Col>
                         <Col xs={12} md={8}>
-                        <AreaCharts />
-                    </Col>
-                    <Col xs={6} md={4}>
-                        <Row className="show-grid">
-                            <Col xs={18} md={12}>
-                            </Col>
-                            <Col xs={18} md={12}>
-                            </Col>
-                        </Row>
-                    </Col>
+                            <AreaCharts />
+                        </Col>
                     </Row>
                 </Paper>
             </Main>

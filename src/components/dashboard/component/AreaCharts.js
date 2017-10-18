@@ -6,10 +6,6 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 class AreaCharts extends Component{
     render(){
 
-        const areacards = {
-            marginBottom: "20",
-        };
-
         const data = [
             {name: 'Page A', 访问人数: 4000, pv: 2400, amt: 2400},
             {name: 'Page B', 访问人数: 3000, pv: 1398, amt: 2210},
@@ -20,7 +16,7 @@ class AreaCharts extends Component{
             {name: 'Page G', 访问人数: 3490, pv: 4300, amt: 2100},
         ];
         return(
-            <Card style={areacards}>
+            <Card style={{margin:25, paddingBottom:20}}>
             <CardTitle title="Card title" />
             <ResponsiveContainer minHeight={300}>
                 <AreaChart data={data} margin={{ top: 5, right: 30, left: 0, bottom: 0 }}>

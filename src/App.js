@@ -5,9 +5,8 @@ import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import { blueA200 } from 'material-ui/styles/colors';
 import './css/App.css';
 import { Url } from "./env";
-import hi from "./components/posts/hi";
+import Posts from "./components/posts/Posts";
 import DashBoard from "./components/dashboard/DashBoard";
-import Lin from './components/dashboard/Line';
 
 class App extends Component {
 	render() {
@@ -22,7 +21,7 @@ class App extends Component {
 			<div>
 				<Switch>
 					<Route exact path={Url("_dashboard")} component={ DashBoard } />
-					<Route exact path={Url("_posts")} component={ hi } />
+					<Route exact path={Url("_posts")} component={ Posts } />
 				</Switch>
 			</div>
 		</Router>

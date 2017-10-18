@@ -3,7 +3,6 @@ import { withRouter } from "react-router";
 import PropTypes from "prop-types";
 import AppHeader from "./AppHeader";
 import AppDrawer from "./AppDrawer";
-import Footer from './Footer';
 
 class Main extends React.Component{
 	render(){
@@ -23,7 +22,6 @@ class Main extends React.Component{
 				<div style={container}>
 					{children}
 				</div>
-				<Footer />
 			</div>
 		);
 	}

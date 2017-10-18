@@ -14,7 +14,7 @@ let port = 3333;
 
 let app = express();
 
-
+// app.use(rewrite('/build/*_', 'build/index.html'))
 app.use(express.static(path.join(__dirname, '..', 'build')));
 
 app.use(bodyParser.json());
