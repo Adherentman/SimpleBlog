@@ -3,9 +3,14 @@ import PropTypes from 'prop-types'
 import { Card, FontIcon } from 'material-ui';
 import { Col } from 'react-bootstrap';
 import CountUp from 'react-countup'
+import axios from 'axios';
+import { dashboard } from '../../../api/demo/index';
 import {red500, blueGrey600, indigo600 } from 'material-ui/styles/colors';
 
 class NumberCard extends Component{
+    componentDidMount(){
+        //axios.dashboard();
+    }
     render(){
 
         const numbercard = {
