@@ -22,6 +22,7 @@ class App extends Component {
 				<Switch>
 					<Route exact path={Url("_dashboard")} component={ DashBoard } />
 					<Route exact path={Url("_posts")} component={ Posts } />
+					<Route exact path={Url("_posts:/fe")} component={ Posts } />
 				</Switch>
 			</div>
 		</Router>

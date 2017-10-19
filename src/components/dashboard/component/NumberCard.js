@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Card, FontIcon } from 'material-ui';
 import { Col } from 'react-bootstrap';
 import CountUp from 'react-countup'
-import {red500, blueGrey600, blue500, deepPurpleA200, indigo600 } from 'material-ui/styles/colors';
+import {red500, blueGrey600, indigo600 } from 'material-ui/styles/colors';
 
 class NumberCard extends Component{
     render(){
@@ -11,7 +11,7 @@ class NumberCard extends Component{
         const numbercard = {
             padding: 32,
             marginBottom: 24,
-            marginTop: 10,
+            marginTop: 20,
         };
         
         const fontIcon = {
@@ -41,9 +41,11 @@ class NumberCard extends Component{
 
         const allItem = data;
 
-        return(<Col xs={6} md={4} style={{float: "left"}}>
+        return(
+            <Col xs={18} md={12}>
             {
-                allItem.map(x=> <Card style={numbercard} key={x.icon}>
+                allItem.map(x=> <Col xs={6} md={4} key={x.icon}>
+                    <Card style={numbercard}>
                     <FontIcon className="material-icons" style={fontIcon} color={x.color}>{x.icon}</FontIcon>
                     <div style={content}>
                         <p style={title}>{x.tit}</p>
@@ -58,7 +60,8 @@ class NumberCard extends Component{
                             />
                     </p>
                     </div>
-                </Card>)
+                </Card>
+                </Col>)
             }
             </Col>
         );

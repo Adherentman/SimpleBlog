@@ -16,7 +16,7 @@ class AreaCharts extends Component{
             {name: 'Page G', 访问人数: 3490, pv: 4300, amt: 2100},
         ];
         return(
-            <Card style={{margin:25, paddingBottom:20}}>
+            <Card style={{margin:17, paddingBottom:20}}>
             <CardTitle title="Card title" />
             <ResponsiveContainer minHeight={300}>
                 <AreaChart data={data} margin={{ top: 5, right: 30, left: 0, bottom: 0 }}>
