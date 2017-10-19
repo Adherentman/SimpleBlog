@@ -7,7 +7,7 @@ import { Card, CardTitle, CardHeader, CardText, CardActions, RaisedButton } from
 class AllPosts extends React.Component{
 	render(){
 		const numbercard = {
-            padding: 18,
+            padding: 15,
             marginBottom: 30,
             marginTop: 20,
         };
@@ -23,22 +23,21 @@ class AllPosts extends React.Component{
 			<Col xs={24} md={12}>
 			{
 				allPosts.map(x=>
-					<Card style={numbercard} key={x.title}>
+					<Card style={numbercard} key={x.title}><CardActions>
+						<RaisedButton 
+							style={{float:'right', marginRight:20, marginTop:'2%'}}
+							label="阅读" 
+							secondary={true}
+						/>
+						</CardActions>
 						<CardHeader 
 							title={x.auther}
 							subtitle={x.data}
 							avatar="/auth.jpeg"
+							style={{width:'50%'}}
 						/>
-						<CardActions>
-							<RaisedButton 
-								style={{float:'right'}}
-								label="阅读" 
-								secondary={true}
-							/>
-						</CardActions>
 						<CardTitle
 						title={x.title}
-						style={{marginTop:25}}
 					/>
 						<CardText style={{wordWrap: 'break-word', wordBreak: 'normal'}}>{x.txt}</CardText>
 					</Card>)
