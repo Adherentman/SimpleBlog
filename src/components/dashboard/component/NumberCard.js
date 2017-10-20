@@ -9,8 +9,16 @@ import {red500, blueGrey600, indigo600 } from 'material-ui/styles/colors';
 
 class NumberCard extends Component{
     componentDidMount(){
-        //axios.dashboard();
+       dashboard('data')
+       .then(function (response) {
+        console.log(response.data,'ttttt');
+        return response.data;
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
     }
+
     render(){
 
         const numbercard = {
