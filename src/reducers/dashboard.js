@@ -1,36 +1,35 @@
+import co from 'co';
 import Immutable from 'immutable';
-import axios from 'axios';
 import { store } from '../env';
+import { dashboard } from '../api/demo/index';
 import * as dashboardActions from '../actions/dashboardActions';
 
 const initialState = Immutable.fromJS({
 
 });
 
-const queryNumberCards = ( state, id ) => {
-    axios.get('/example',{
-        data:{
-            "date": "1987-01-23",
-            "time": "16:36:09",
-            "datetime": "2005-08-14 23:42:20",
-            "now": "2017-10-15 16:13:21"
-        }
-    })
-    .then(function(response){
-        console.log(response);
-    })
-    .catch(function(error){
-        console.log(error);
-    });
+const getDashboardCards = (state, field) => {
+dashboard().then(res => {
+    let list = res && res.data && res.data.cards;
+    console.log(list);
+    store.dispatch(dashboardActions.gotDashboardCards(res.data && res.data.cards));
+},err => {
+    console.log(err);
+});
 
-    return state;
+return state;
 };
+
+const gotDashboardCards = (state, info) => {
+    return state.set('cards',Immutable.fromJS(info));
+}
 
 export default (state = initialState, action) => {
     switch (action.type) {
-        case 'QUERY_NUMBER_CARDDS':
-            return queryNumberCards(state, action.id);
-    
+        case 'GET_DASH_BOARD_CARDS':
+            return getDashboardCards(state, action.field);
+        case 'GOT_DASH_BOARD_CARDS':
+            return gotDashboardCards(state, action.info)
         default:
             return state;
     }
