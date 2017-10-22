@@ -2,9 +2,10 @@ import React from 'react';
 import Main from '../Main';
 import { withRouter } from 'react-router';
 import { Paper } from 'material-ui';
-import { Row, Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import DashBoardCard from './component/DashBoardCard';
 import AreaCharts from "./component/AreaCharts";
+import Browser from "./component/Browser";
 
 class DashBoard extends React.Component{
     render(){
@@ -13,9 +14,8 @@ class DashBoard extends React.Component{
                 <Paper className="admin-paper" zDepth={3}>
                     <Row className="show-grid">
                             <DashBoardCard />
-                        <Col xs={12} md={8}>
                             <AreaCharts />
-                        </Col>
+                            <Browser />
                     </Row>
                 </Paper>
             </Main>

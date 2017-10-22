@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import PropTypes from 'prop-types'
 import { withRouter } from "react-router";
 import { immutableRenderDecorator } from 'react-immutable-render-mixin';
 import { connect } from 'react-redux';
@@ -8,8 +7,6 @@ import { Card, FontIcon } from 'material-ui';
 import { Col } from 'react-bootstrap';
 import CountUp from 'react-countup';
 import * as dashboardActions from '../../../actions/dashboardActions';
-import { dashboard } from '../../../api/demo/index';
-import { Url, ts } from '../../../env';
 
 class DashBoardCard extends Component{
     
@@ -19,8 +16,8 @@ componentDidMount(){
 }
 
 render(){
-
-    const {cards, actions } = this.props;
+    const { cards, actions } = this.props;
+    console.log(cards,'ggggg');
 // const numbercard = {
 //     padding: 32,
 //     marginBottom: 24,
@@ -72,6 +69,7 @@ return(
     </Col>);
     }
 }
+
 export default withRouter(connect(state => {
     return {
         cards: state.dashboard.get('cards'),
