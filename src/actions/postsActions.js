@@ -3,7 +3,7 @@ export const getPosts = field => ({
     field
 });
 
-export const gotPosts = info => ({
+export const gotPosts = posts => ({
     type: 'GOT_POSTS',
-    info
+    posts
 });

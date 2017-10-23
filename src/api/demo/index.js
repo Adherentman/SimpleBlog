@@ -10,14 +10,6 @@ function posts_get(opts) {
   });
 }
 
-/** browserList */
-function browserList_get(opts) {
-  return instance({
-    method: 'get',
-    url:  '/browserList',
-    opts: opts
-  });
-}
 
 /** number */
 function _dashboard_get(opts) {
@@ -30,6 +22,5 @@ function _dashboard_get(opts) {
 
 export {
   posts_get,
-  browserList_get,
   _dashboard_get
 };

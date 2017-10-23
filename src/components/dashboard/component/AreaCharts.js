@@ -26,7 +26,7 @@ const data = [
 
 return(
     <Col xs={12} md={8}>
-    <Card style={{margin:17, paddingBottom:20}}>
+    <Card style={{margin:17, paddingBottom:20, paddingLeft: 10}}>
     <CardTitle title="访问波动图" />
     <ResponsiveContainer minHeight={300}>
         <AreaChart data={data} margin={{ top: 5, right: 30, left: 0, bottom: 0 }}>

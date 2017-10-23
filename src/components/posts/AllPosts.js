@@ -18,6 +18,8 @@ componentDidMount(){
 
 	render(){
 		const { posts, actions } =this.props;
+        let PostsJs = posts && posts.toJS();
+		console.log(PostsJs,'ddddd');
 		
 		const data = [
 			{ auther: "Xzh", title:"第一篇", data:"2017", txt:"dajdpajdpajdojapodapfapoda" },
@@ -29,9 +31,8 @@ componentDidMount(){
 		return(
 			<Col xs={24} md={12}>
 			{
-			posts && posts.map(x=>
-					<Card style={{padding:15, marginBottom: 30, marginTop: 20}} key={x.get('id')}><CardActions>
-					{console.log(x,'hdihahodahpdah')}
+				PostsJs && PostsJs.map(x=>
+					<Card style={{padding:15, marginBottom: 30, marginTop: 20}} key={x.id}><CardActions>
 						<RaisedButton 
 							style={{float:'right', marginRight:20, marginTop:'2%'}}
 							label="阅读" 
@@ -40,14 +41,14 @@ componentDidMount(){
 						</CardActions>
 						<CardHeader 
 							title='xzh'
-							subtitle={x.get('time')}
+							subtitle={x.time}
 							avatar="/auth.jpeg"
 							style={{width:'50%'}}
 						/>
 						<CardTitle
-						title={x.get('title')}
+						title={x.title}
 					/>
-						<CardText style={{wordWrap: 'break-word', wordBreak: 'normal'}}>{x.get('sentens')}</CardText>
+						<CardText style={{wordWrap: 'break-word', wordBreak: 'normal'}}>{x.sentens}</CardText>
 					</Card>)
 			}
 			</Col>
@@ -57,7 +58,7 @@ componentDidMount(){
 
 export default withRouter(connect(state => {
     return {
-        posts: state.dashboard.get('posts'),
+        posts: state.posts.get('posts'),
     };
 }, dispatch => ({
     actions: bindActionCreators(postsActions, dispatch),

@@ -16,7 +16,9 @@ componentDidMount() {
 render(){
 
     const { browserList, actions } = this.props;
-    console.log(browserList,"wo shi BrowserList");
+    
+    let PostsJs = browserList && browserList.toJS();
+    console.log(PostsJs,"wo shi BrowserList");
     // let browserListJs = browserList && browserList.toJS();
     // console.log(browserListJs,'toJsya');
 
@@ -24,14 +26,13 @@ return(
     <Col xs={6} md={4}>
     <Card style={{marginTop:16, marginRight:20}} >
     <List>
+    <Subheader>访问设备</Subheader>
     {
-        browserList && browserList.map(x =>
-            <div key={x.get('id')}>
-            {console.log(x,'sss222')}
-            <Subheader>访问设备</Subheader>
+        PostsJs && PostsJs.map(x =>
+            <div key={x.id}>
             <ListItem 
-            primaryText={x.get('name')}
-            rightAvatar={<Chip backgroundColor={'#c1e0fc'}>{x.get('percent')}</Chip>}
+            primaryText={x.name}
+            rightAvatar={<Chip backgroundColor={x.color}>{x.percent}%</Chip>}
             />
             <Divider/>
             </div>

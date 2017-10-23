@@ -19,23 +19,25 @@ _dashboard_get().then(res => {
 return state;
 };
 
-const gotDashboardCards = (state, info) => {
-    return state.set('cards', Immutable.fromJS(info));
+const gotDashboardCards = (state, cards) => {
+    let list = Immutable.fromJS(cards);
+    return state.set('cards', list);
 }
 
 const getDashboardBrowser = (state, field) => {
-browserList_get().then(res => {
-    let col = res && res.data && res.data.browserList;
-    console.log(col,'browserList');
-    store.dispatch(dashboardActions.gotDashboardChart(col));
+_dashboard_get().then(res => {
+    let list = res && res.data && res.data.browserList;
+    console.log(list,'browserList');
+    store.dispatch(dashboardActions.gotDashboardBrowser(list));
 },err => {
     console.log(err);
 });
 return state;
 };
 
-const gotDashboardBrowser = (state, info) => {
-    return state.set('browserList', Immutable.fromJS(info));
+const gotDashboardBrowser = (state, browserList) => {
+    let list = Immutable.fromJS(browserList);
+    return state.set('browserList', list);
 };
 
 // const getDashboardChart = (state, field) => {
@@ -61,7 +63,7 @@ export default (state = initialState, action) => {
         case 'GET_DASH_BOARD_CARDS':
             return getDashboardCards(state, action.field);
         case 'GOT_DASH_BOARD_CARDS':
-            return gotDashboardCards(state, action.info);
+            return gotDashboardCards(state, action.cards);
         // case 'GET_DASH_BOARD_CHART':
         //     return getDashboardChart(state, action.field);
         // case 'GOT_DASH_BOARD_CHART':
@@ -69,7 +71,7 @@ export default (state = initialState, action) => {
         case 'GET_DASH_BOARD_BROWSER':
             return getDashboardBrowser(state, action.field);
         case 'GOT_DASH_BOARD_BROWSER':
-            return gotDashboardBrowser(state, action.info);
+            return gotDashboardBrowser(state, action.browserList);
         default:
             return state;
     }

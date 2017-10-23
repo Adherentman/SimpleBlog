@@ -3,9 +3,9 @@ export const getDashboardCards = field => ({
     field
 });
 
-export const gotDashboardCards = info => ({
+export const gotDashboardCards = cards => ({
     type: 'GOT_DASH_BOARD_CARDS',
-    info
+    cards
 });
 
 export const getDashboardChart = field => ({
@@ -18,13 +18,12 @@ export const gotDashboardChart = info => ({
     info
 });
 
-
 export const getDashboardBrowser = field => ({
     type: 'GET_DASH_BOARD_BROWSER',
-    field
-});
+    field,
+})
 
-export const gotDashboardBrowser = info => ({
+export const gotDashboardBrowser = browserList => ({
     type: 'GOT_DASH_BOARD_BROWSER',
-    info
-});
+    browserList,
+})
