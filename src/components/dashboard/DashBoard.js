@@ -3,9 +3,9 @@ import Main from '../Main';
 import { withRouter } from 'react-router';
 import { Paper } from 'material-ui';
 import { Row } from 'react-bootstrap';
-import DashBoardCard from './component/DashBoardCard';
-import AreaCharts from "./component/AreaCharts";
-import Browser from "./component/Browser";
+import DashBoardCard from './DashBoardCard';
+import AreaCharts from "./AreaCharts";
+import Browser from "./Browser";
 
 class DashBoard extends React.Component{
     render(){

@@ -20,7 +20,7 @@ class AppDrawer extends React.Component{
             { key: "posts", label: "All Posts", icon: "chrome_reader_mode" },
             { key: "fe", label: "Font-end Dev", icon: "keyboard" },
             { key: "os", label: "Operating System", icon: "important_devices" },
-            { key: "flight", label: "Life trip", icon: "flight_takeoff" },
+            { key: "flight", label: "Life Trip", icon: "flight_takeoff" },
             { key: "me", label: "About Me", icon: "face"},
         ];
 

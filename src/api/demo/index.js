@@ -1,6 +1,14 @@
 import instance from './instance';
 import { convertRESTAPI } from '../util';
 
+/** zhaopian */
+function photos_get(opts) {
+  return instance({
+    method: 'get',
+    url:  '/photos',
+    opts: opts
+  });
+}
 /** wenzhang */
 function posts_get(opts) {
   return instance({
@@ -21,6 +29,7 @@ function _dashboard_get(opts) {
 }
 
 export {
+  photos_get,
   posts_get,
-  _dashboard_get
+  _dashboard_get,
 };

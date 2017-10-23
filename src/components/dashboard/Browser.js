@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Col } from 'react-bootstrap';
 import { Card, Chip, Divider, List, ListItem, Subheader} from 'material-ui';
-import * as dashboardActions from '../../../actions/dashboardActions';
+import * as dashboardActions from '../../actions/dashboardActions';
 
 class Browser extends Component{
 

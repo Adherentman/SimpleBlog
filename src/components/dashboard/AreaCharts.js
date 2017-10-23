@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import { Card, CardTitle } from 'material-ui';
 import { Col } from 'react-bootstrap';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
-import * as dashboardActions from '../../../actions/dashboardActions';
+import * as dashboardActions from '../../actions/dashboardActions';
 
 class AreaCharts extends Component{
 

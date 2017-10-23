@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import { Card, FontIcon } from 'material-ui';
 import { Col } from 'react-bootstrap';
 import CountUp from 'react-countup';
-import * as dashboardActions from '../../../actions/dashboardActions';
+import * as dashboardActions from '../../actions/dashboardActions';
 
 class DashBoardCard extends Component{
     
