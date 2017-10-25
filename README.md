@@ -2,5 +2,7 @@
 
 - git clone
 - yarn
-- yarn start
+- cd server && yarn
+- npm start
+- 然后去localhost:3333
 即可。
