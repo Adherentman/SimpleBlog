@@ -4,6 +4,7 @@ import { Row } from 'react-bootstrap';
 import { Paper } from 'material-ui';
 import Main from '../Main';
 import Photos from './Photos';
+import OneLinePhotos from './OneLinePhotos';
 
 
 class LifeTrip extends Component {
@@ -13,6 +14,8 @@ class LifeTrip extends Component {
                 <Paper className="admin-paper" zDepth={3}>
                     <Row className="show-grid">
                     <Photos />
+                    <OneLinePhotos />
+                    <OneLinePhotos/>
                     </Row>
                 </Paper>
             </Main>

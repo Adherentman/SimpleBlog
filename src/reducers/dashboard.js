@@ -1,6 +1,6 @@
 import Immutable from 'immutable';
 import { store } from '../env';
-import { _dashboard_get, browserList_get } from '../api/demo/index';
+import { _dashboard_get } from '../api/demo/index';
 import * as dashboardActions from '../actions/dashboardActions';
 
 const initialState = Immutable.fromJS({

@@ -16,7 +16,7 @@ componentDidMount(){
 }
 
 render(){
-    const { cards, actions } = this.props;
+    const { cards } = this.props;
     console.log(cards,'ggggg');
 // const numbercard = {
 //     padding: 32,

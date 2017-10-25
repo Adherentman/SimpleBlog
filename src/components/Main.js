@@ -3,6 +3,7 @@ import { withRouter } from "react-router";
 import PropTypes from "prop-types";
 import AppHeader from "./AppHeader";
 import AppDrawer from "./AppDrawer";
+import AppFooter from "./AppFooter";
 
 class Main extends React.Component{
 	render(){
@@ -22,6 +23,7 @@ class Main extends React.Component{
 				<div style={container}>
 					{children}
 				</div>
+				<AppFooter />
 			</div>
 		);
 	}

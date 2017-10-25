@@ -15,7 +15,7 @@ componentDidMount() {
 
 render(){
 
-    const { browserList, actions } = this.props;
+    const { browserList } = this.props;
     
     let PostsJs = browserList && browserList.toJS();
     console.log(PostsJs,"wo shi BrowserList");

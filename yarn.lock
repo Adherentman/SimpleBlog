@@ -3004,6 +3004,10 @@ get-caller-file@^1.0.1:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/get-caller-file/download/get-caller-file-1.0.2.tgz#f702e63127e7e231c160a80c1554acb70d5047e5"
 
+get-in@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/get-in/download/get-in-3.0.1.tgz#253071a0f83c51b540d69db09b8e60160b37ecd6"
+
 get-stdin@^4.0.1:
   version "4.0.1"
   resolved "http://registry.npm.taobao.org/get-stdin/download/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
