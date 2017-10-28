@@ -18,31 +18,6 @@ componentDidMount(){
 render(){
     const { cards } = this.props;
     console.log(cards,'ggggg');
-// const numbercard = {
-//     padding: 32,
-//     marginBottom: 24,
-//     marginTop: 20,
-// };
-
-// const fontIcon = {
-//     float: 'left',
-//     fontSize: 50,
-// };
-
-// const content = {
-//     width: '100%',
-//     paddingLeft: 78,
-// };
-
-// const title = {
-//     fontSize: 16,
-//     marginBottom: 10,
-// };
-
-// const number = {
-//     fontSize: 24,
-//     height: 15,
-// };
 
 return(
     <Col xs={18} md={12}>

@@ -1,5 +1,5 @@
 import instance from './instance';
-import { convertRESTAPI } from '../util';
+// import { convertRESTAPI } from '../util';
 
 /** zhaopian */
 function photos_get(opts) {

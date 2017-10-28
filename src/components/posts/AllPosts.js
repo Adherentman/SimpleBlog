@@ -1,12 +1,11 @@
 import React from "react";
 import { withRouter } from "react-router";
 import { Col } from 'react-bootstrap';
-import { Card, CardTitle, CardHeader, CardText, CardActions, RaisedButton } from 'material-ui';
+import { Card, CardTitle, CardHeader, CardText } from 'material-ui';
 import { immutableRenderDecorator } from 'react-immutable-render-mixin';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as postsActions from '../../actions/postsActions';
-import { Url } from '../../env';
 
 
 class AllPosts extends React.Component{
@@ -17,7 +16,7 @@ componentDidMount(){
 
 	render(){
 
-		const { posts, history } =this.props;
+		const { posts } =this.props;
         let PostsJs = posts && posts.toJS();
 		console.log(PostsJs,'ddddd');
 

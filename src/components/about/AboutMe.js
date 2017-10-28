@@ -4,6 +4,7 @@ import { Paper } from 'material-ui';
 import Main from '../Main';
 import { Row } from 'react-bootstrap';
 import About from './About';
+
 class AboutMe extends Component {
     render(){
         return(

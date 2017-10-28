@@ -5,7 +5,6 @@ import * as postsActions from '../actions/postsActions';
 
 const initialState = Immutable.fromJS({
     posts: [],
-    article: null
 });
 
 const getPosts = (state, field) => {
