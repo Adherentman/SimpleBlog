@@ -17,7 +17,7 @@ render(){
     const styles = {
         root: {
           margin: '30px',
-          padding: 20,
+          width:600,
         },
         gridList: {
           display: 'flex',

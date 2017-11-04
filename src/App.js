@@ -9,13 +9,14 @@ import Posts from "./components/posts/Posts";
 import DashBoard from "./components/dashboard/DashBoard";
 import LifeTrip from "./components/lifetrip/LifeTrip";
 import AboutMe from './components/about/AboutMe';
+import Home from './components/Home';
 
 class App extends Component {
 	render() {
 
 		const muiTheme = getMuiTheme({
 			appBar: {
-				color: blueA200
+				color: '#2196f3'
 			},
 		  });
 
@@ -26,6 +27,7 @@ class App extends Component {
 					<Route exact path={Url("_posts")} component={ Posts } />
 					<Route path={Url("_flight")} component={ LifeTrip } />
 					<Route path={Url("_me")} component={ AboutMe } />
+					<Route path='/' component={ Home }/>
 				</Switch>
 			</div>
 		</Router>
