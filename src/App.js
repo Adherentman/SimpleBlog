@@ -27,7 +27,7 @@ class App extends Component {
 					<Route exact path={Url("_posts")} component={ Posts } />
 					<Route path={Url("_flight")} component={ LifeTrip } />
 					<Route path={Url("_me")} component={ AboutMe } />
-					<Route path='/' component={ Home }/>
+					<Route component={ Home }/>
 				</Switch>
 			</div>
 		</Router>
