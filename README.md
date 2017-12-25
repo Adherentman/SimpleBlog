@@ -12,6 +12,7 @@
 
 ## 文件tree
 
+``` json
 ├── README.md       //readme
 ├── build           //自动化压缩后的代码
 ├── node_modules    //npm包
@@ -20,6 +21,7 @@
 ├── server          //服务端
 ├── src             //主要文件
 └── yarn.lock       //yarn
+```
 
 - git clone
 - yarn
