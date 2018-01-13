@@ -2,6 +2,7 @@
   "name": "projectblog",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "axios": "^0.16.2",
     "babel-cli": "^6.26.0",
