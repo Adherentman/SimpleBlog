@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 # 基于React技术栈和Material UI的一个Blog
 
-=======
->>>>>>> cd59615b11f03462943a9c5f05e169f342d9e829
 ![技术栈](http://ozar6ogjb.bkt.clouddn.com/projectblog.png)
 
 # 基于React技术栈和Material UI的一个Blog
