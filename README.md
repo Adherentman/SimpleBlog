@@ -1,6 +1,6 @@
 # 基于React技术栈和Material UI的一个Blog
 
-![效果](http://ozar6ogjb.bkt.clouddn.com/12%E6%9C%88-25-2017%2016-46-56.gif)
+![技术栈](http://ozar6ogjb.bkt.clouddn.com/projectblog.png)
 
 ## Posts
 
