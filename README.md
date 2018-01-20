@@ -2,7 +2,6 @@
 
 ![技术栈](http://ozar6ogjb.bkt.clouddn.com/projectblog.png)
 
-# 基于React技术栈和Material UI的一个Blog
 ## Posts
 
 ![posts](http://ozar6ogjb.bkt.clouddn.com/poats.png)
