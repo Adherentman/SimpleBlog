@@ -27,7 +27,7 @@ componentDidMount(){
 				<CardHeader 
 					title='Xzh'
 					subtitle="发表于：2017-09-26"
-					avatar="/auth.jpeg"
+					avatar="http://ozar6ogjb.bkt.clouddn.com/auth.jpeg"
 					style={{width:'50%'}}
 				/>
 				<CardTitle
@@ -60,7 +60,7 @@ componentDidMount(){
 						<CardHeader 
 							title='Xzh'
 							subtitle={x.time}
-							avatar="/auth.jpeg"
+							avatar="http://ozar6ogjb.bkt.clouddn.com/auth.jpeg"
 							style={{width:'50%'}}
 						/>
 						<CardTitle
