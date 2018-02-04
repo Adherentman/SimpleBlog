@@ -1,4 +1,4 @@
-# 基于React技术栈和Material UI的一个Blog
+# 基于 React 技术栈和 Material UI 的一个 Blog
 
 ![技术栈](http://ozar6ogjb.bkt.clouddn.com/projectblog.png)
 
@@ -10,9 +10,9 @@
 
 ![about](http://ozar6ogjb.bkt.clouddn.com/about.png)
 
-## 文件tree
+## 文件 tree
 
-``` json
+```json
 ├── README.md       //readme
 ├── build           //自动化压缩后的代码
 ├── node_modules    //npm包
@@ -23,10 +23,10 @@
 └── yarn.lock       //yarn
 ```
 
-- git clone
-- yarn
-- cd server && yarn
-- npm start
-- 然后去localhost:3333
+* git clone
+* yarn
+* cd server && yarn
+* npm start
+* 然后去 localhost:3333
 
 即可。

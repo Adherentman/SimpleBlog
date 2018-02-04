@@ -14,6 +14,7 @@
     "loadash": "^1.0.0",
     "material-ui": "^0.19.4",
     "nodemon": "^1.12.1",
+    "prettier": "^1.10.2",
     "react": "^16.0.0",
     "react-bootstrap": "^0.31.3",
     "react-countup": "^2.3.0",
@@ -30,7 +31,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --write '**/*.{jsx,js,css,md}'"
   },
   "devDependencies": {
     "node-sass": "^4.5.3",

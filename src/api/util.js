@@ -3,13 +3,19 @@ import axios from 'axios';
 const instance = axios.create();
 
 function createAPI(baseURL) {
-  return function (conf) {
+  return function(conf) {
     conf = conf || {};
-    return instance(Object.assign({}, {
-      url: conf.url,
-      baseURL: baseURL,
-      method: conf.method
-    }, conf.opts));
+    return instance(
+      Object.assign(
+        {},
+        {
+          url: conf.url,
+          baseURL: baseURL,
+          method: conf.method,
+        },
+        conf.opts
+      )
+    );
   };
 }
 
@@ -18,7 +24,7 @@ function convertRESTAPI(url, opts) {
 
   const pathKeys = Object.keys(opts.path);
 
-  pathKeys.forEach((key) => {
+  pathKeys.forEach(key => {
     const r = new RegExp('(:' + key + '|{' + key + '})', 'g');
     url = url.replace(r, opts.path[key]);
   });
@@ -26,7 +32,4 @@ function convertRESTAPI(url, opts) {
   return url;
 }
 
-export {
-  createAPI,
-  convertRESTAPI
-};
+export { createAPI, convertRESTAPI };

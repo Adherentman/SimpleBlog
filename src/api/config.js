@@ -1,3 +1,3 @@
 export default {
-  env: 'mock'
+  env: 'mock',
 };
