@@ -22,12 +22,19 @@ class DashBoardCard extends Component {
       <Col xs={18} md={12}>
         {cards &&
           cards.map(x => (
-            <Col xs={6} md={4} key={x.get('id')}>
+            <Col xs={6} md={4} key={x.get('id')} style={{
+              paddingLeft: 24,
+              paddingRight: 24,
+              paddingBottom: 24,
+              paddingTop: 24,
+              float: 'left'
+            }}>
               <Card
                 style={{
-                  padding: 32,
-                  marginBottom: 24,
-                  marginTop: 20,
+                  paddingLeft: 12,
+                  paddingRight: 12,
+                  paddingBottom: 12,
+                  paddingTop: 12
                 }}
               >
                 <FontIcon
