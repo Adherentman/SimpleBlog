@@ -67,10 +67,6 @@ export default (state = initialState, action) => {
       return getDashboardCards(state, action.field);
     case 'GOT_DASH_BOARD_CARDS':
       return gotDashboardCards(state, action.cards);
-    // case 'GET_DASH_BOARD_CHART':
-    //     return getDashboardChart(state, action.field);
-    // case 'GOT_DASH_BOARD_CHART':
-    //     return gotDashboardChart(state, action.info);
     case 'GET_DASH_BOARD_BROWSER':
       return getDashboardBrowser(state, action.field);
     case 'GOT_DASH_BOARD_BROWSER':

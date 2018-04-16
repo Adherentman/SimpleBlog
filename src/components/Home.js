@@ -29,7 +29,7 @@ class Home extends Component {
               flex: '0 0 auto',
               color: '#fff',
               display: 'flex',
-              minHeight: '100vh',
+              minHeight: '95vh',
               alignItems: 'center',
               justifyContent: 'center',
               backgroundColor: '#2196f3',
@@ -68,7 +68,7 @@ class Home extends Component {
             <div style={{ lineHeight: '1.5em', fontSize: '1.3em', fontWeight: '300' }}>
               <div style={{ width: '100%', display: 'flex', flexWrap: 'wrap' }}>
                 <div style={{ maxWidth: '50%', flexBasis: '50%' }}>
-                  <ui style={{ listStyle: 'none' }}>
+                  <ul style={{ listStyle: 'none' }}>
                     <li style={{ paddingTop: '4px', paddingBottom: '4px', display: 'list-item' }}>
                       <a
                         style={{ color: 'inherit', textDecoration: 'none' }}
@@ -93,7 +93,7 @@ class Home extends Component {
                         Zhi Hu
                       </a>
                     </li>
-                  </ui>
+                  </ul>
                 </div>
               </div>
             </div>

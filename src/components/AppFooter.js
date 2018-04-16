@@ -28,7 +28,6 @@ class AppFooter extends React.Component {
           iconStyle={{ color: 'white' }}
           iconClassName="muidocs-icon-custom-github"
           href="https://github.com/Adherentman"
-          linkButton={true}
         />
       </div>
     );

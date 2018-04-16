@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import { AppBar, IconButton } from 'material-ui';
 
 class AppHeader extends React.Component {
@@ -28,4 +27,4 @@ class AppHeader extends React.Component {
   }
 }
 
-export default withRouter(AppHeader);
+export default AppHeader;

@@ -3,9 +3,7 @@ import { withRouter } from 'react-router';
 import { Row } from 'react-bootstrap';
 import { Paper } from 'material-ui';
 import Main from '../Main';
-import Photos from './Photos';
-import OneLinePhotos from './OneLinePhotos';
-import FourPhotos from './FourPhotos';
+import CardPhoto from './CardPhoto';
 
 class LifeTrip extends Component {
   render() {
@@ -13,9 +11,7 @@ class LifeTrip extends Component {
       <Main selectedDrawer="flight">
         <Paper className="admin-paper" zDepth={3}>
           <Row className="show-grid">
-            <Photos />
-            <FourPhotos />
-            <OneLinePhotos />
+            <CardPhoto />
           </Row>
         </Paper>
       </Main>

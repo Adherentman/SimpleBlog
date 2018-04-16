@@ -26,5 +26,4 @@
 * git clone
 * yarn
 * yarn start
-* 浏览器输入localhost:3333
-
+* 浏览器输入 localhost:3333
